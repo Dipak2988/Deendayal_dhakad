@@ -55,7 +55,7 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://telegra.ph/file/4451bccb14cbe06e24673-e7d0c330d9070f954f.jpg')
+QR_CODE = environ.get('QR_CODE', 'https://te.legra.ph/file/745615de3ffa26d895caa-32f254d99a642f50b0.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'dss.dss@freecharge')
 
 # ============================
@@ -76,17 +76,17 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 # ============================
 # Verification Settings
 # ============================
-VERIFY = bool(environ.get('VERIFY', False))  # Verification On (True) / Off (False)
-DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 24))  # Add time in hours
-DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002370988072'))  # Log channel id (make sure bot is admin)
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/DSSBackupChannel')  # How to open tutorial link for verification
+VERIFY = bool(environ.get('VERIFY', True))  # Verification On (True) / Off (False)
+DEENDAYAL_VERIFY_EXPIRE = int(environ.get('DEENDAYAL_VERIFY_EXPIRE', 12))  # Add time in hours
+DEENDAYAL_VERIFIED_LOG = int(environ.get('DEENDAYAL_VERIFIED_LOG', '-1002168852711'))  # Log channel id (make sure bot is admin)
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/HowToDownloadMovie2023/10')  # How to open tutorial link for verification
 
 # ============================
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shortxlinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'd73e70a35dc3877fa14afbf51fa8ec312c94780c')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'bharatlinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '992a059dce9b55f5481cb1a5690c398deefd8749')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/DSSBackupChannel')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 
@@ -128,7 +128,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002244828112')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
@@ -162,7 +162,7 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://foreign-monica-dssbot-131fe4ed.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else "https://{}/".format(FQDN, PORT)
+URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'DeendayalBot'))
