@@ -63,8 +63,8 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'dss.dss@freecharge')
 # ============================
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dipsinghasarkar:zUlHwmlh5PV45Yv7@dipak10.m9juu87.mongodb.net/?retryWrites=true&w=majority&appName=Dipak10")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "cluster")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Dipak10")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 
 # ============================
 # Movie Notification & Update Settings
