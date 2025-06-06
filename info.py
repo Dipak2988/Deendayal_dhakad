@@ -18,8 +18,8 @@ def is_enabled(value, default):
 # Bot Information Configuration
 # ============================
 SESSION = environ.get('SESSION', 'Deendayal_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '29214489'))
+API_HASH = environ.get('API_HASH', 'eb5bd88f71851a9c069eeb42ec0958aa')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # ============================
