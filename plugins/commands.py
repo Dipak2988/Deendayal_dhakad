@@ -186,9 +186,9 @@ async def start(client, message):
                     "You have not joined all our *Updates Channels* yet.\n"
                     "Please click the *Join Updates Channels* buttons below and ensure that you join *all* the listed channels.\n"
                     "After that, please try again.\n\n"
-                    "आपने हमारे *सभी Updates Channels* को जॉइन नहीं किया है।\n"
-                    "कृपया *Join Updates Channels* बटन पर क्लिक करें और सुनिश्चित करें कि आपने *सभी चैनल्स* को जॉइन किया है।\n"
-                    "इसके बाद, कृपया फिर से प्रयास करें।"
+                    "আপনি এখনও আমাদের সব *আপডেট চ্যানেল* তে যোগদান করেননি।\n"
+                    "নীচের *আপডেট চ্যানেলে যোগদান করুন* বোতামে ক্লিক করে এবং নিশ্চিত করুন যে আপনি তালিকাভুক্ত *সকল* চ্যানেলে যোগদান করেছেন।\n"
+                    "এর পরে, try again তে ক্লিক করুন।"
                 )
                 await message.reply_photo(
                     photo=random.choice(FSUB_PICS),
@@ -334,7 +334,7 @@ async def start(client, message):
             ]]
             await message.reply_photo(
                 photo="https://graph.org/file/6928de1539e2e80e47fb8.jpg",
-                caption=f"<b>Hey {message.from_user.mention},\n\n𝑌𝑜𝑢 𝐴𝑟𝑒 𝑆𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙 𝑉𝑒𝑟𝑖𝑓𝑖𝑒𝑑 ! 𝑁𝑜𝑤 𝑌𝑜𝑢 𝐻𝑎𝑣𝑒 𝑈𝑛𝑙𝑖𝑚𝑖𝑡𝑒𝑑 𝐴𝑐𝑐𝑒𝑠𝑠 𝐹𝑜𝑟 {DEENDAYAL_VERIFY_EXPIRE} HOURS.\n\n<blockquote>आप सफलतापूर्वक सत्यापित हो गए हैं अब आप {DEENDAYAL_VERIFY_EXPIRE}  घंटे  तक 𝐷𝑖𝑟𝑒𝑐𝑡 𝑀𝑜𝑣𝑖𝑒 की 𝐹𝑖𝑙𝑒𝑠 प्राप्त कर सकते हैं।</blockquote></b>",
+                caption=f"<b>Hey {message.from_user.mention},\n\n𝑌𝑜𝑢 𝐴𝑟𝑒 𝑆𝑢𝑐𝑐𝑒𝑠𝑠𝑓𝑢𝑙 𝑉𝑒𝑟𝑖𝑓𝑖𝑒𝑑 ! 𝑁𝑜𝑤 𝑌𝑜𝑢 𝐻𝑎𝑣𝑒 𝑈𝑛𝑙𝑖𝑚𝑖𝑡𝑒𝑑 𝐴𝑐𝑐𝑒𝑠𝑠 𝐹𝑜𝑟 {DEENDAYAL_VERIFY_EXPIRE} HOURS.\n\n<blockquote>আপনার Verification সফলভাবে সম্পন্ন হয়েছে, আপনি এখন {DEENDAYAL_VERIFY_EXPIRE}  ঘন্টা পর্যন্ত 𝐹𝑖𝑙𝑒𝑠 এর 𝐷𝑖𝑟𝑒𝑐𝑡 𝑀𝑜𝑣𝑖𝑒 পেতে পারেন।</blockquote></b>",
                 reply_markup=InlineKeyboardMarkup(btn)
             )
             await verify_user(client, userid, token) 
@@ -448,7 +448,7 @@ async def start(client, message):
                        InlineKeyboardButton("⚡ Hᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ⚡", url=HOW_TO_VERIFY)
                    ]]
                     l = await message.reply_text(
-                        text=f"<b>♨️ YOU ARE NOT VERIFIED !\nKINDLY VERIFY TO CONTINUE & YOU CAN GET UNLIMITED ACCESS FOR {DEENDAYAL_VERIFY_EXPIRE} HOURS ✅\n\n<blockquote>⚜️ इस BOT से MOVIE प्राप्त करने के लिए आपको VERIFY करना आवश्यक है VERIFY करने के बाद आप {DEENDAYAL_VERIFY_EXPIRE} घंटे तक UNLIMITED MOVIES प्राप्त कर सकते हो।</blockquote>\n\n<blockquote>🔥 अगर आप VERIFY नहीं करना चाहते तो आप PREMIUM ले सकते हो, PREMIUM लेने के बाद आप UNLIMITED MOVIES प्राप्त कर पाओगे और आपको VERIFY करने कोई जरूरत नहीं है\n\nPLAN DETAILS के लिए CLICK करें /plan</blockquote></b>",
+                        text=f"<b>♨️ YOU ARE NOT VERIFIED !\nKINDLY VERIFY TO CONTINUE & YOU CAN GET UNLIMITED ACCESS FOR {DEENDAYAL_VERIFY_EXPIRE} HOURS ✅.\n\n🔥 If you do not want to verify then you can take PREMIUM, after taking PREMIUM you will be able to get UNLIMITED MOVIES and you do not need to verify..\n\nCLICK HERE FOR PLAN DETAILS /plan\n\n<blockquote>⚜️ এই বট থেকে সিনেমা পেতে আপনাকে verify করতে হবে। Verify করার পর আপনি {DEENDAYAL_VERIFY_EXPIRE} ঘন্টার জন্য সীমাহীন সিনেমা পেতে পারেন।</blockquote>\n\n<blockquote>🔥 যদি আপনি verify করতে না চান তাহলে আপনি PREMIUM নিতে পারেন, PREMIUM নেওয়ার পর আপনি UNLIMITED MOVIES দেখতে পারবেন এবং আপনার verify করার প্রয়োজন নেই।\n\nপরিকল্পনার বিস্তারিত জানতে এখানে ক্লিক করুন /plan</blockquote></b>",
                         protect_content=False,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
