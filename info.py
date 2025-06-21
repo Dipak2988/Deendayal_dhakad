@@ -85,8 +85,8 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/HowToDownloadMovie202
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'bharatlinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '992a059dce9b55f5481cb1a5690c398deefd8749')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'vplink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '31b855b9b6fcc54653f36c97e9c6f2817a110157')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HowToDownloadMovie2023/10')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
