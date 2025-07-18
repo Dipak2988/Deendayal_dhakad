@@ -55,7 +55,7 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://te.legra.ph/file/745615de3ffa26d895caa-32f254d99a642f50b0.jpg')
+QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/9d3dcfd44cae301d811e3-40efcf1a3aaff35d2f.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'dss.dss@freecharge')
 
 # ============================
