@@ -55,7 +55,7 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/9d3dcfd44cae301d811e3-40efcf1a3aaff35d2f.jpg')
+QR_CODE = environ.get('QR_CODE', 'https://envs.sh/ZrU.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'dss.dss@freecharge')
 
 # ============================
@@ -85,8 +85,8 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/HowToDownloadMovie202
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arolinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'af777892f2d5912013a05ac2f488eba04084b84e')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'indiaearnx.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'c19c67a9916fd7128a847b19f0842476eb3d9bae')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HowToDownloadMovie2023/10')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
